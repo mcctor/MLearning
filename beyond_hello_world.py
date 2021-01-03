@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from tensorflow.keras import models
+
 
 # model
 model = tf.keras.models.Sequential(
@@ -14,7 +14,6 @@ model.compile(
     optimizer=tf.keras.optimizers.Adam(),
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy'])
-
 
 # data
 mnist = tf.keras.datasets.fashion_mnist
